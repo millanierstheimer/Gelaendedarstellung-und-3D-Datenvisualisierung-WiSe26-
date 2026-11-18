@@ -1,1 +1,1 @@
-# Gel-ndedarstellung-und-3D-Datenvisualisierung-WiSe26-
+# Gelaendedarstellung-und-3D-Datenvisualisierung-WiSe26
