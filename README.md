@@ -16,4 +16,9 @@ EP06 | Spike Maps
 
 <img width="705" height="329" alt="S1_berlin_SpikeMaps" src="https://github.com/user-attachments/assets/b9aceb1e-95e8-47c6-a668-94d6d4a49c91" />
 
+EP07 | Local Scenes in ArcGIS Pro
+
+<img width="3508" height="2480" alt="columbiahalle_3D" src="https://github.com/user-attachments/assets/095f71e5-0942-45ee-90e1-70e068e9db02" />
+
+
 
