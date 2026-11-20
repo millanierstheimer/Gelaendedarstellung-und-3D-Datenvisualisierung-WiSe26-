@@ -30,15 +30,16 @@ Ziel der Übung war es, eine gedruckte Reliefkarte des Landes Brandenburg im Ma�
 
 Durch die Abstufung der Höhenlagen und die Reliefschattierung treten selbst die feinen eiszeitlichen Geländeformen wie Urstromtäler, Seenplatten und der Fläming plastisch hervor.
 
+
 ## **EP05 – Illuminated Choropleth Maps**
 
 <img src="https://github.com/user-attachments/assets/5fe55d80-7c2b-44fa-b259-f54d525566b1" alt="S1_berlin_schummerung" width="750" />
 
 ### Umsetzung der Methode
 
-Grundlage ist eine **Choroplethenkarte** für **Berlin** mit abgestuften Grün- und Beigetönen vor einer dunklen Grundkarte. In **ArcGIS Pro** wurde die Flächenklassifikation mit einer **Schummerung / Beleuchtungswirkung (Illumination / Hillshade)** kombiniert, um den teilflächenbezogenen Werten räumliche Tiefe zu verleihen.
+Grundlage sind die Berliner LOR-Daten aus dem Monitoring Soziale Stadtentwicklung (`berlin_LOR_MSS_2025`), dargestellt für die **Arbeitslosigkeit (S1)** vor einer dunklen Grundkarte[cite: 6]. In **ArcGIS Pro** wurden die Gebiete in **5 Farbklassen** ohne Umrisslinien eingeteilt. Damit die Flächen räumlich wirken, wurden die Werte als Höheninformation (`!S1!*20`) in ein `10 m`-Raster umgewandelt und daraus eine **Schummerung (Hillshade)** berechnet.
 
-Durch die Kombination aus Farbabstufung und Beleuchtungseffekt treten kleinräumige Unterschiede zwischen den einzelnen Gebieten Berlins plastischer hervor als bei einer klassischen flachen Choroplethenkarte.
+So entsteht aus einer flachen Datenkarte eine plastische Darstellung, in der man die Unterschiede bei der Arbeitslosigkeit zwischen den Berliner Kiezen deutlich erkennen kann.
 
 EP06 | Spike Maps
 
