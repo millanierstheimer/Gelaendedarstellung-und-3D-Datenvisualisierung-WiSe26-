@@ -8,10 +8,14 @@ EP02 | Geländedarstellung II
 
 Grundlage ist ein digitales Höhenmodell (**DEM**) aus dem **ArcGIS Living Atlas**, zugeschnitten auf die Landesgrenzen der Schweiz vor schwarzem Hintergrund. In **ArcGIS Pro** wurden **DEM und Schummerung (Hillshade)** mit angepassten Farb- und Transparenzwerten nach den **Imhof-Farbparametern** überlagert, um eine realistische Licht- und Schattenwirkung zu erzeugen.
 
-EP03 | Höhenschichten & Isolinien
 
-<img width="3508" height="2480" alt="berlin_contour" src="https://github.com/user-attachments/assets/9b1e63c8-a60f-4df5-a9ce-e5c08d22020c" />
+## **EP03 – Höhenschichten & Isolinien (Berlin)**
 
+<img width="3508" height="2480" alt="berlin_contour" src="https://github.com/user-attachments/assets/602c99e2-f9de-4618-9dff-8f6373d09816" />
+
+### Umsetzung der Methode
+
+Grundlage ist ein Höhenmodell für **Berlin**, zugeschnitten auf die Stadtgrenzen vor einem dunklen Hintergrund. Über abgestufte **Höhenschichten und Isolinien** werden die Geländeformen und Höhenunterschiede im Stadtgebiet sichtbar gemacht.
 
 <img width="957" height="716" alt="bb_höhenlinien" src="https://github.com/user-attachments/assets/84c2c293-a4b1-480b-a290-eaf0f72da6b0" />
 
