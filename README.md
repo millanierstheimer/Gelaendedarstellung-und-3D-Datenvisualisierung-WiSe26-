@@ -51,9 +51,15 @@ Grundlage sind die Berliner LOR-Daten aus dem Monitoring Soziale Stadtentwicklun
 
 Durch die Kombination aus Spitzenhöhe und Farbverlauf lassen sich lokale Schwerpunkte der Arbeitslosigkeit im Berliner Stadtgebiet auf einen Blick ablesen.
 
-EP07 | Local Scenes in ArcGIS Pro
+## **EP07 – Local Scenes: 3D-Gebäudemodell (Columbiahalle)**
 
-<img width="3508" height="2480" alt="columbiahalle_3D" src="https://github.com/user-attachments/assets/095f71e5-0942-45ee-90e1-70e068e9db02" />
+<img src="https://github.com/user-attachments/assets/DEIN-BILD-LINK" alt="columbiahalle_3D" width="750" />
+
+### Umsetzung der Methode
+
+Für das 3D-Stadtmodell rund um die **Columbiahalle** wurden die Gebäudehöhen aus dem **Berliner Umweltatlas** über einen **WFS-Dienst** angebunden, auf den Zielbereich eingegrenzt und im einheitlichen Koordinatensystem **EPSG:25833** aufbereitet. In einer **lokalen 3D-Szene** von **ArcGIS Pro** erfolgte anschließend die **Höhenextrusion** der Grundrisse anhand des Attributs `hoehe` sowie die thematische Einfärbung nach Gebäudenutzung (`funktion_t`) mit **Beleuchtung und Schattenwurf** vor einer topografischen Grundkarte mit 3D-Bäumen.
+
+Durch die Verbindung von Höhenextrusion, Nutzungsdifferenzierung und Licht-/Schattenwirkung lassen sich die Gebäudekubaturen und Höhenunterschiede rund um den Columbiadamm räumlich erkennen.
 
 
 
