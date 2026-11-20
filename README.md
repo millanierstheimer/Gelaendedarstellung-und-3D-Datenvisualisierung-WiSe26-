@@ -41,9 +41,16 @@ Grundlage sind die Berliner LOR-Daten aus dem Monitoring Soziale Stadtentwicklun
 
 So entsteht aus einer flachen Datenkarte eine plastische Darstellung, in der man die Unterschiede bei der Arbeitslosigkeit zwischen den Berliner Kiezen deutlich erkennen kann.
 
-EP06 | Spike Maps
+## **EP05 – Spike Map (Berlin)**
 
-<img width="705" height="329" alt="S1_berlin_SpikeMaps" src="https://github.com/user-attachments/assets/b9aceb1e-95e8-47c6-a668-94d6d4a49c91" />
+<img width="705" height="329" alt="S1_berlin_SpikeMaps" src="https://github.com/user-attachments/assets/d0c1c5c9-7cf2-483e-b773-f09705fbdaa5" />
+
+
+### Umsetzung der Methode
+
+Grundlage sind wieder die Berliner LOR-Daten aus dem Monitoring Soziale Stadtentwicklung (`berlin_LOR_MSS_2025`), dargestellt für die **Arbeitslosigkeit (S1)** vor einer dunklen Grundkarte. In **ArcGIS Pro** wurden die Gebietsflächen auf `80 %` Transparenz gesetzt und über das Werkzeug **Feature in Punkt** durch Mittelpunkte repräsentiert. Aus einem dreieckigen Symbol-Layer und einem **Spike-Style** (*Granitspike*) wurden über datengesteuerte Symbolisierungseffekte (**Maßstab** für die Spitzenhöhe und **Verschieben** für den vertikalen Versatz) dreidimensional wirkende Spikes erzeugt und nach dem Wert `S1` eingefärbt.
+
+Durch die Kombination aus Spitzenhöhe und Farbverlauf lassen sich lokale Schwerpunkte der Arbeitslosigkeit im Berliner Stadtgebiet auf einen Blick ablesen.
 
 EP07 | Local Scenes in ArcGIS Pro
 
