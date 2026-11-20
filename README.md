@@ -1,6 +1,6 @@
 # Gelaendedarstellung-und-3D-Datenvisualisierung-WiSe26
 
-EP02 | Geländedarstellung II
+## **EP02 | Geländedarstellung II**
 
 <img width="3508" height="2480" alt="schweiz_relief" src="https://github.com/user-attachments/assets/9009cabc-e5a9-4a1a-bf26-1ea1e2ab771e" />
 
@@ -11,13 +11,24 @@ Grundlage ist ein digitales Höhenmodell (**DEM**) aus dem **ArcGIS Living Atlas
 
 ## **EP03 – Höhenschichten & Isolinien (Berlin)**
 
-<img width="3508" height="2480" alt="berlin_contour" src="https://github.com/user-attachments/assets/602c99e2-f9de-4618-9dff-8f6373d09816" />
+<img width="3508" height="2480" alt="berlin_contour" src="https://github.com/user-attachments/assets/f04be1ff-f6be-4c97-955c-5be819d1b030" />
+
 
 ### Umsetzung der Methode
 
-Grundlage ist ein Höhenmodell für **Berlin**, zugeschnitten auf die Stadtgrenzen vor einem dunklen Hintergrund. Über abgestufte **Höhenschichten und Isolinien** werden die Geländeformen und Höhenunterschiede im Stadtgebiet sichtbar gemacht.
+Grundlage ist das Raster `Berlin_DEM_Focal_10.tif` für **Berlin** vor dunklem Hintergrund. In **ArcGIS Pro** wurden daraus über das Werkzeug **Konturlinien (Contour)** Höhenlinien/Stufen erzeugt und als abgestufte Höhenschichten visualisiert.
 
-<img width="957" height="716" alt="bb_höhenlinien" src="https://github.com/user-attachments/assets/84c2c293-a4b1-480b-a290-eaf0f72da6b0" />
+Die Abstufungen machen die flachen Übergänge sowie die leichten Erhebungen im Berliner Stadtgebiet klar erkennbar.
+
+## **EP03 – Reliefkarte Berlin/Brandenburg nach historischer Vorlage**
+
+<img src="https://github.com/user-attachments/assets/84c2c293-a4b1-480b-a290-eaf0f72da6b0" alt="bb_höhenlinien" width="750" />
+
+### Umsetzung der Methode
+
+Ziel der Übung war es, eine gedruckte Reliefkarte des Landes Brandenburg im Maßstab 1 : 500 000 frei in **ArcGIS Pro** nachzubilden. Auf Basis des **SRTM-Höhenmodells** wurde Brandenburg auf seine Landesgrenzen zugeschnitten und über **hypsometrische Höhenschichten**, **Schummerung (Hillshade)** sowie **Isolinien** vor einer dezenten Hintergrundkarte visualisiert.
+
+Durch die Abstufung der Höhenlagen und die Reliefschattierung treten selbst die feinen eiszeitlichen Geländeformen wie Urstromtäler, Seenplatten und der Fläming plastisch hervor.
 
 EP05 | Illuminated Choropleth Maps
 
