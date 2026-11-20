@@ -53,7 +53,7 @@ Durch die Kombination aus Spitzenhöhe und Farbverlauf lassen sich lokale Schwer
 
 ## **EP07 – Local Scenes: 3D-Gebäudemodell (Columbiahalle)**
 
-<img src="https://github.com/user-attachments/assets/DEIN-BILD-LINK" alt="columbiahalle_3D" width="750" />
+<img width="3508" height="2480" alt="columbiahalle_3D" src="https://github.com/user-attachments/assets/6c7088fa-9cfd-4a4a-b618-4a34420de444" />
 
 ### Umsetzung der Methode
 
