@@ -2,9 +2,13 @@
 
 EP02 | Geländedarstellung II
 
-<img width="842" height="595" alt="Schweiz_Relief" src="https://github.com/user-attachments/assets/5009d8a7-a050-4b02-8197-9516386fe729" />
+<img width="3508" height="2480" alt="schweiz_relief" src="https://github.com/user-attachments/assets/9009cabc-e5a9-4a1a-bf26-1ea1e2ab771e" />
+
 
 EP03 | Höhenschichten & Isolinien
+
+<img width="3508" height="2480" alt="berlin_contour" src="https://github.com/user-attachments/assets/9b1e63c8-a60f-4df5-a9ce-e5c08d22020c" />
+
 
 <img width="957" height="716" alt="bb_höhenlinien" src="https://github.com/user-attachments/assets/84c2c293-a4b1-480b-a290-eaf0f72da6b0" />
 
