@@ -63,7 +63,7 @@ Durch die Kombination aus thematischer Farbgebung und Schummerung entsteht eine 
 
 ---
 
-## EP05 – Spike Map (Berlin)
+## EP06 – Spike Map (Berlin)
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d0c1c5c9-7cf2-483e-b773-f09705fbdaa5" width="900" alt="Spike Map Berlin">
