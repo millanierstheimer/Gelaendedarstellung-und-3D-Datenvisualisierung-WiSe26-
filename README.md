@@ -4,6 +4,9 @@ EP02 | Geländedarstellung II
 
 <img width="3508" height="2480" alt="schweiz_relief" src="https://github.com/user-attachments/assets/9009cabc-e5a9-4a1a-bf26-1ea1e2ab771e" />
 
+### Umsetzung der Methode
+
+Grundlage ist ein digitales Höhenmodell (**DEM**) aus dem **ArcGIS Living Atlas**, zugeschnitten auf die Landesgrenzen der Schweiz vor schwarzem Hintergrund. In **ArcGIS Pro** wurden **DEM und Schummerung (Hillshade)** mit angepassten Farb- und Transparenzwerten nach den **Imhof-Farbparametern** überlagert, um eine realistische Licht- und Schattenwirkung zu erzeugen.
 
 EP03 | Höhenschichten & Isolinien
 
