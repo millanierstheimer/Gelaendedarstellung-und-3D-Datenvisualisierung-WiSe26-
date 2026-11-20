@@ -45,10 +45,9 @@ So entsteht aus einer flachen Datenkarte eine plastische Darstellung, in der man
 
 <img width="705" height="329" alt="S1_berlin_SpikeMaps" src="https://github.com/user-attachments/assets/d0c1c5c9-7cf2-483e-b773-f09705fbdaa5" />
 
-
 ### Umsetzung der Methode
 
-Grundlage sind wieder die Berliner LOR-Daten aus dem Monitoring Soziale Stadtentwicklung (`berlin_LOR_MSS_2025`), dargestellt für die **Arbeitslosigkeit (S1)** vor einer dunklen Grundkarte. In **ArcGIS Pro** wurden die Gebietsflächen auf `80 %` Transparenz gesetzt und über das Werkzeug **Feature in Punkt** durch Mittelpunkte repräsentiert. Aus einem dreieckigen Symbol-Layer und einem **Spike-Style** (*Granitspike*) wurden über datengesteuerte Symbolisierungseffekte (**Maßstab** für die Spitzenhöhe und **Verschieben** für den vertikalen Versatz) dreidimensional wirkende Spikes erzeugt und nach dem Wert `S1` eingefärbt.
+Grundlage sind die Berliner LOR-Daten aus dem Monitoring Soziale Stadtentwicklung (`berlin_LOR_MSS_2025`), dargestellt für die **Arbeitslosigkeit (S1)** vor einer dunklen Grundkarte. In **ArcGIS Pro** wurden die Gebietsflächen auf `80 %` Transparenz gesetzt und über **Feature in Punkt** durch Mittelpunkte repräsentiert. Aus einer dreieckigen Grundform  sowie dem geladenen Style *Granitspike* wurden über datengesteuerte Symbolisierungseffekte Spitzen erzeugt: Über den **Maßstab (Y-Achse)** skaliert die **Höhe der Spikes** mit dem `S1`-Wert, während ein vertikaler **Offset (Verschieben entlang Y)** dafür sorgt, dass die Basis jedes Spikes exakt auf dem jeweiligen Gebietspunkt stehen bleibt statt nach unten zu rutschen. Zusätzlich wurden die Spikes nach dem Indikator `S1` farblich abgestuft.
 
 Durch die Kombination aus Spitzenhöhe und Farbverlauf lassen sich lokale Schwerpunkte der Arbeitslosigkeit im Berliner Stadtgebiet auf einen Blick ablesen.
 
