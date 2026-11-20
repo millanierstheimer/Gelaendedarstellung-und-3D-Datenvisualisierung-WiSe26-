@@ -1,75 +1,115 @@
-# Gelaendedarstellung-und-3D-Datenvisualisierung-WiSe26
 
-## **EP02 | Geländedarstellung II**
-
-<img width="3508" height="2480" alt="schweiz_relief" src="https://github.com/user-attachments/assets/9009cabc-e5a9-4a1a-bf26-1ea1e2ab771e" />
-
-### Umsetzung der Methode
-
-Grundlage ist ein digitales Höhenmodell (**DEM**) aus dem **ArcGIS Living Atlas**, zugeschnitten auf die Landesgrenzen der Schweiz vor schwarzem Hintergrund. In **ArcGIS Pro** wurden **DEM und Schummerung (Hillshade)** mit angepassten Farb- und Transparenzwerten nach den **Imhof-Farbparametern** überlagert, um eine realistische Licht- und Schattenwirkung zu erzeugen.
+# Geländedarstellung und 3D-Datenvisualisierung | WiSe 2026
 
 
-## **EP03 – Höhenschichten & Isolinien (Berlin)**
 
-<img width="3508" height="2480" alt="berlin_contour" src="https://github.com/user-attachments/assets/f04be1ff-f6be-4c97-955c-5be819d1b030" />
+## EP02 – Geländedarstellung II
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9009cabc-e5a9-4a1a-bf26-1ea1e2ab771e" width="900" alt="Reliefkarte der Schweiz">
+</p>
 
 ### Umsetzung der Methode
 
-Grundlage ist das Raster `Berlin_DEM_Focal_10.tif` für **Berlin** vor dunklem Hintergrund. In **ArcGIS Pro** wurden daraus über das Werkzeug **Konturlinien (Contour)** Höhenlinien/Stufen erzeugt und als abgestufte Höhenschichten visualisiert.
+Grundlage ist ein digitales Höhenmodell (**DEM**) aus dem **ArcGIS Living Atlas**, das auf die Landesgrenzen der Schweiz zugeschnitten wurde. In **ArcGIS Pro** wurden das DEM und eine Schummerung (**Hillshade**) mit angepassten Farb- und Transparenzwerten nach den **Imhof-Farbparametern** miteinander kombiniert.
 
-Die Abstufungen machen die flachen Übergänge sowie die leichten Erhebungen im Berliner Stadtgebiet klar erkennbar.
+Durch die Überlagerung der Höheninformationen mit der Schummerung entsteht eine plastische Reliefdarstellung, die die Geländeformen und Höhenunterschiede der Schweiz hervorhebt.
 
-## **EP03 – Reliefkarte Berlin/Brandenburg nach historischer Vorlage**
+---
 
-<img src="https://github.com/user-attachments/assets/84c2c293-a4b1-480b-a290-eaf0f72da6b0" alt="bb_höhenlinien" width="750" />
+## EP03 – Höhenschichten und Isolinien (Berlin)
 
-### Umsetzung der Methode
-
-Ziel der Übung war es, eine gedruckte Reliefkarte des Landes Brandenburg im Maßstab 1 : 500 000 frei in **ArcGIS Pro** nachzubilden. Auf Basis des **SRTM-Höhenmodells** wurde Brandenburg auf seine Landesgrenzen zugeschnitten und über **hypsometrische Höhenschichten**, **Schummerung (Hillshade)** sowie **Isolinien** vor einer dezenten Hintergrundkarte visualisiert.
-
-Durch die Abstufung der Höhenlagen und die Reliefschattierung treten selbst die feinen eiszeitlichen Geländeformen wie Urstromtäler, Seenplatten und der Fläming plastisch hervor.
-
-
-## **EP05 – Illuminated Choropleth Maps**
-
-<img src="https://github.com/user-attachments/assets/5fe55d80-7c2b-44fa-b259-f54d525566b1" alt="S1_berlin_schummerung" width="750" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f04be1ff-f6be-4c97-955c-5be819d1b030" width="900" alt="Höhenschichten und Isolinien Berlin">
+</p>
 
 ### Umsetzung der Methode
 
-Grundlage sind die Berliner LOR-Daten aus dem Monitoring Soziale Stadtentwicklung (`berlin_LOR_MSS_2025`), dargestellt für die **Arbeitslosigkeit (S1)** vor einer dunklen Grundkarte[cite: 6]. In **ArcGIS Pro** wurden die Gebiete in **5 Farbklassen** ohne Umrisslinien eingeteilt. Damit die Flächen räumlich wirken, wurden die Werte als Höheninformation (`!S1!*20`) in ein `10 m`-Raster umgewandelt und daraus eine **Schummerung (Hillshade)** berechnet.
+Grundlage ist das digitale Höhenmodell `Berlin_DEM_Focal_10.tif`, das das Berliner Stadtgebiet abbildet. In **ArcGIS Pro** wurden mithilfe des Werkzeugs **Konturlinien (Contour)** Höhenlinien aus dem Raster erzeugt und die Höheninformationen in abgestuften Höhenschichten visualisiert.
 
-So entsteht aus einer flachen Datenkarte eine plastische Darstellung, in der man die Unterschiede bei der Arbeitslosigkeit zwischen den Berliner Kiezen deutlich erkennen kann.
+Die Abstufungen machen die geringen Höhenunterschiede und leichten Erhebungen im ansonsten weitgehend flachen Berliner Stadtgebiet sichtbar.
 
-## **EP05 – Spike Map (Berlin)**
+---
 
-<img width="705" height="329" alt="S1_berlin_SpikeMaps" src="https://github.com/user-attachments/assets/d0c1c5c9-7cf2-483e-b773-f09705fbdaa5" />
+## EP03 – Reliefkarte Berlin/Brandenburg nach historischer Vorlage
 
-### Umsetzung der Methode
-
-Grundlage sind die Berliner LOR-Daten aus dem Monitoring Soziale Stadtentwicklung (`berlin_LOR_MSS_2025`), dargestellt für die **Arbeitslosigkeit (S1)** vor einer dunklen Grundkarte. In **ArcGIS Pro** wurden die Gebietsflächen auf `80 %` Transparenz gesetzt und über **Feature in Punkt** durch Mittelpunkte repräsentiert. Aus einer dreieckigen Grundform  sowie dem geladenen Style *Granitspike* wurden über datengesteuerte Symbolisierungseffekte Spitzen erzeugt: Über den **Maßstab (Y-Achse)** skaliert die **Höhe der Spikes** mit dem `S1`-Wert, während ein vertikaler **Offset (Verschieben entlang Y)** dafür sorgt, dass die Basis jedes Spikes exakt auf dem jeweiligen Gebietspunkt stehen bleibt statt nach unten zu rutschen. Zusätzlich wurden die Spikes nach dem Indikator `S1` farblich abgestuft.
-
-Durch die Kombination aus Spitzenhöhe und Farbverlauf lassen sich lokale Schwerpunkte der Arbeitslosigkeit im Berliner Stadtgebiet auf einen Blick ablesen.
-
-## **EP07 – Local Scenes: 3D-Gebäudemodell (Columbiahalle)**
-
-<img width="3508" height="2480" alt="columbiahalle_3D" src="https://github.com/user-attachments/assets/6c7088fa-9cfd-4a4a-b618-4a34420de444" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/84c2c293-a4b1-480b-a290-eaf0f72da6b0" width="900" alt="Reliefkarte Berlin und Brandenburg">
+</p>
 
 ### Umsetzung der Methode
 
-Für das 3D-Stadtmodell rund um die **Columbiahalle** wurden die Gebäudehöhen aus dem **Berliner Umweltatlas** über einen **WFS-Dienst** angebunden, auf den Zielbereich eingegrenzt und im einheitlichen Koordinatensystem **EPSG:25833** aufbereitet. In einer **lokalen 3D-Szene** von **ArcGIS Pro** erfolgte anschließend die **Höhenextrusion** der Grundrisse anhand des Attributs `hoehe` sowie die thematische Einfärbung nach Gebäudenutzung (`funktion_t`) mit **Beleuchtung und Schattenwurf** vor einer topografischen Grundkarte mit 3D-Bäumen.
+Ziel der Übung war es, eine gedruckte Reliefkarte des Landes Brandenburg im Maßstab 1 : 500.000 mit **ArcGIS Pro** nachzubilden. Als Datengrundlage diente das **SRTM-Höhenmodell**, das auf die Landesgrenzen Brandenburgs zugeschnitten wurde.
 
-Durch die Verbindung von Höhenextrusion, Nutzungsdifferenzierung und Licht-/Schattenwirkung lassen sich die Gebäudekubaturen und Höhenunterschiede rund um den Columbiadamm räumlich erkennen.
+Die Geländedarstellung entstand durch die Kombination aus **hypsometrischen Höhenschichten**, **Schummerung (Hillshade)** und **Isolinien** vor einer dezenten Hintergrundkarte.
 
-## **EP07 – 3D-Prismenkarte: Soziale Stadtentwicklung (Berlin)**
+Durch die Kombination dieser Darstellungsformen treten auch feinere eiszeitlich geprägte Geländeformen wie Urstromtäler, Seenplatten und der Fläming plastisch hervor.
 
-<img width="3508" height="2480" alt="berlin_atribut_hoehe" src="https://github.com/user-attachments/assets/b26cd83e-d828-4813-9929-19b44d2498fa" />
+---
+
+## EP05 – Illuminated Choropleth Maps
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5fe55d80-7c2b-44fa-b259-f54d525566b1" width="900" alt="Illuminated Choropleth Map Berlin">
+</p>
 
 ### Umsetzung der Methode
 
-Für diese 3D-Ansicht der Berliner LOR-Gebiete (`outputLayer` aus `EP01`) wurden in einer **3D-Szene** von **ArcGIS Pro** zwei soziale Werte gekoppelt: Die Farbe steht für die **Statusklasse (`SK`)**, während die **3D-Extrusion** (*Maximale Höhe*) über den skalierten Wert zur **Kinderarmut (`S4`, `$feature.S4*100`)** gesteuert wird. Statt echter Geländehöhen steckt hier also der Attributwert hinter der Höhe der Prismen.
+Grundlage sind die Berliner LOR-Daten aus dem Monitoring Soziale Stadtentwicklung (`berlin_LOR_MSS_2025`). Dargestellt wird der Indikator **Arbeitslosigkeit (S1)** vor einer dunklen Grundkarte.
 
-Durch die Farb- und Höhenunterschiede kann man gut erkennen in welchen Berliner Kiezen ein niedriger sozialer Status mit hoher Kinderarmut zusammenfällt.
+In **ArcGIS Pro** wurden die Gebiete in fünf Farbklassen eingeteilt und ohne Umrisslinien dargestellt. Um einen räumlichen Effekt zu erzeugen, wurden die Attributwerte über den Ausdruck `!S1!*20` als Höheninformationen in ein 10-m-Raster übertragen. Auf dieser Grundlage wurde anschließend eine **Schummerung (Hillshade)** berechnet.
+
+Durch die Kombination aus thematischer Farbgebung und Schummerung entsteht eine plastische Choroplethenkarte, die die räumlichen Unterschiede der Arbeitslosigkeit zwischen den Berliner Kiezen hervorhebt.
+
+---
+
+## EP05 – Spike Map (Berlin)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d0c1c5c9-7cf2-483e-b773-f09705fbdaa5" width="900" alt="Spike Map Berlin">
+</p>
+
+### Umsetzung der Methode
+
+Grundlage sind ebenfalls die Berliner LOR-Daten aus dem Monitoring Soziale Stadtentwicklung (`berlin_LOR_MSS_2025`). Dargestellt wird der Indikator **Arbeitslosigkeit (S1)**.
+
+Zunächst wurden die Gebietsflächen auf 80 % Transparenz gesetzt und mithilfe des Werkzeugs **Feature in Punkt** durch ihre Mittelpunkte repräsentiert. Anschließend wurden ausgehend von einer dreieckigen Grundform und dem geladenen Style *Granitspike* über datengesteuerte Symbolisierungseffekte dreidimensionale Spitzen erzeugt.
+
+Die Höhe der Spikes wird über den Maßstab der Y-Achse durch den jeweiligen `S1`-Wert gesteuert. Ein vertikaler Offset (Verschieben entlang der Y-Achse) sorgt dafür, dass die Basis der Spikes auf den jeweiligen Gebietspunkten bleibt. Zusätzlich erfolgt eine farbliche Abstufung anhand des Indikators `S1`.
+
+Durch die Kombination aus Spitzenhöhe und Farbgebung lassen sich räumliche Schwerpunkte der Arbeitslosigkeit im Berliner Stadtgebiet erkennen.
+
+---
+
+## EP07 – Local Scenes: 3D-Gebäudemodell (Columbiahalle)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6c7088fa-9cfd-4a4a-b618-4a34420de444" width="900" alt="3D-Gebäudemodell Columbiahalle">
+</p>
+
+### Umsetzung der Methode
+
+Für das 3D-Stadtmodell rund um die **Columbiahalle** wurden Gebäudehöhen aus dem **Berliner Umweltatlas** über einen WFS-Dienst eingebunden und auf den Untersuchungsbereich eingegrenzt. Die Daten wurden anschließend in das einheitliche Koordinatensystem **EPSG:25833** überführt.
+
+In einer lokalen 3D-Szene von **ArcGIS Pro** erfolgte die Höhenextrusion der Gebäudegrundrisse anhand des Attributs `hoehe`. Zusätzlich wurden die Gebäude entsprechend ihrer Nutzung (`funktion_t`) thematisch eingefärbt. Beleuchtung und Schattenwurf ergänzen die Darstellung vor einer topografischen Grundkarte mit 3D-Bäumen.
+
+Durch die Kombination aus Gebäudehöhen, Nutzungsdifferenzierung und Licht- und Schatteneffekten werden die Gebäudekubaturen und Höhenunterschiede rund um den Columbiadamm räumlich sichtbar.
+
+---
+
+## EP07 – 3D-Prismenkarte: Soziale Stadtentwicklung (Berlin)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b26cd83e-d828-4813-9929-19b44d2498fa" width="900" alt="3D-Prismenkarte soziale Stadtentwicklung Berlin">
+</p>
+
+### Umsetzung der Methode
+
+Grundlage sind die Berliner LOR-Gebiete (`outputLayer` aus EP01), die in einer **3D-Szene** von **ArcGIS Pro** visualisiert wurden. Dabei werden zwei soziale Indikatoren miteinander kombiniert: Die Farbe der Prismen repräsentiert die **Statusklasse (SK)**, während ihre Höhe über den skalierten Indikator **Kinderarmut (S4)** gesteuert wird. Hierfür wurde der Ausdruck `$feature.S4*100` verwendet.
+
+Im Gegensatz zu einer klassischen Geländedarstellung basieren die Höhen der Prismen somit nicht auf tatsächlichen Geländehöhen, sondern auf den jeweiligen Attributwerten.
+
+Durch die Kombination aus Farb- und Höhenunterschieden lassen sich räumliche Zusammenhänge zwischen dem sozialen Status und der Kinderarmut in den Berliner Kiezen erkennen.
 
 
 
