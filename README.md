@@ -61,5 +61,15 @@ Für das 3D-Stadtmodell rund um die **Columbiahalle** wurden die Gebäudehöhen 
 
 Durch die Verbindung von Höhenextrusion, Nutzungsdifferenzierung und Licht-/Schattenwirkung lassen sich die Gebäudekubaturen und Höhenunterschiede rund um den Columbiadamm räumlich erkennen.
 
+## **EP07 – 3D-Prismenkarte: Soziale Stadtentwicklung (Berlin)**
+
+<img width="3508" height="2480" alt="berlin_atribut_hoehe" src="https://github.com/user-attachments/assets/b26cd83e-d828-4813-9929-19b44d2498fa" />
+
+### Umsetzung der Methode
+
+Für diese 3D-Ansicht der Berliner LOR-Gebiete (`outputLayer` aus `EP01`) wurden in einer **3D-Szene** von **ArcGIS Pro** zwei soziale Werte gekoppelt: Die Farbe steht für die **Statusklasse (`SK`)**, während die **3D-Extrusion** (*Maximale Höhe*) über den skalierten Wert zur **Kinderarmut (`S4`, `$feature.S4*100`)** gesteuert wird. Statt echter Geländehöhen steckt hier also der Attributwert hinter der Höhe der Prismen.
+
+Durch die Farb- und Höhenunterschiede kann man gut erkennen in welchen Berliner Kiezen ein niedriger sozialer Status mit hoher Kinderarmut zusammenfällt.
+
 
 
